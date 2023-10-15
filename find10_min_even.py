@@ -6,10 +6,10 @@ def find_min_even(data):
     returns: minimum even number in the list
     """
     i=0
-    min=data[0]
+    min=100
     while i<len(data):
-        if data[i]%2==0:
-            if min>data[i]:
+        if min>data[i]:
+            if data[i]%2==0:
                 min=data[i]
         i+=1
     return min
